@@ -1,9 +1,12 @@
 {
-  "name": "portfolio",
+  "name": "PortfolioBenInada",
   "description": "A portfolio enumerating my work, skills, and just me in general.",
-  "repository": "https://github.com/beninada/beninada.github.io",
+  "repository":
+    {
+      "type": "git",
+      "url": "https://github.com/beninada/beninada.github.io.git"
+    },
   "devDependencies": {
-    "bower": "~1.3.5",
     "grunt": "^0.4.5",
     "grunt-contrib-clean": "~0.5.0",
     "grunt-contrib-concat": "~0.3.0",
