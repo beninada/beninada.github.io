@@ -1,12 +1,72 @@
-.hello,
-.check-me-out {
-  width: 90%;
+.intro {
+  width: 100%;
+  height: 511px;
+  background-color: #300000;
+  }
+
+.intro > h1 {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 270px; /*Adjust after navbar*/
+  margin-bottom: 240px; /*Adjust after navbar*/
+  font-family: "proxima-nova";
+  color: #eeeeee;
+  font-size: 50px;
+  font-weight: 700;
 }
 
-.hello {
-  margin: 5% auto 20px 5%;
+.about-me {
+  width: 100%;
+  height: 602px;
+  background-color: #fff2dd;
+  margin-bottom: 475px;
+  }
+
+.about-me > h1 {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 85px; 
+  font-family: "proxima-nova";
+  color:  #333333;
+  font-size: 80px;
+  font-weight: 700;
 }
 
-.check-me-out {
-  margin: 0 auto 5% 5%;
+.about-me > p {
+  text-align: left;
+  margin-left: 150px;
+  margin-right: 150px;
+  font-family: "ff-tisa-web-pro";
+  color: #333333;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+}
+
+.works {
+  width: 100%;
+  height: 1092px;
+  background-color: #ffffff;
+}
+
+.works > h1 {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 90px;
+  font-family: "proxima-nova";
+  color:  #333333;
+  font-size: 80px;
+  font-weight: 700; 
+}
+
+.contact-me {
+  font-family: "proxima-nova";
+  background: #333333;
+  text-align: center;
+  height: 500px;
+  padding: 100px;
+  color: white;
 }
