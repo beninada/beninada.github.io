@@ -1,18 +1,20 @@
-var txt = ['sturdy', 'clean', 'memorable'],
-  n = txt.length,
-  $swap = $('.intro-first-adjective'),
-  c = 0;
+var nouns = ['experiences', 'interfaces', 'components', 'stories'],
+    delayTime = 2500,
+    $swap = $('.intro-noun'),
+    c = 0;
 
-for (var i = 0; i < txt.length; i++) $swap.append($('<span />', {
-  text: txt[i]
-}));
+for (var i = 0; i < nouns.length; i++) {
+  $swap.append($('<span />', { text: nouns[i] }));
+}
 
-var $span = $("span", $swap).hide();
+var $span = $('span', $swap).hide();
 
 (function loop() {
-  c = ++c % n;
+  c = ++c % nouns.length;
+
   $swap.animate({
-      width: $span.eq(c).width()
+    width: $span.eq(c).width()
   });
-  $span.fadeOut().eq(c).fadeIn().delay(1000).show(loop);
+
+  $span.fadeOut().eq(c).fadeIn().delay(delayTime).show(loop);
 }());

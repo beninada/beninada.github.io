@@ -1,11 +1,9 @@
-.intro {
-  .intro-first-adjective {
-    vertical-align: top;
-    width: 0;
-    height: 50px;
+.intro-noun {
+  vertical-align: top;
+  width: 0;
+  height: 50px;
 
-    > span {
-      position: absolute;
-    }
+  > span {
+    position: absolute;
   }
 }
