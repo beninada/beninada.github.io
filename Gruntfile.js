@@ -18,16 +18,18 @@ module.exports = function(grunt) {
         }
       }
     },
-    autoprefixer: {
-      target: {
-        src: 'css/**/*.css'
+    sass: {
+      dist: {
+        files: {
+          'dist/css/main.css': 'css/main.scss'
+        }
       }
     },
     cssmin: {
       minify: {
         expand: true,
-        cwd: 'css/',
-        src: ['**/*.css', '!**/*.min.css'],
+        cwd: 'dist/css/',
+        src: ['*.css', '!*.min.css'],
         dest: 'dist/css/',
         ext: '.min.css'
       },
@@ -74,10 +76,12 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-sass');
 
   grunt.registerTask('lint',    ['jshint']);
-  grunt.registerTask('minify',  ['concat', 'autoprefixer', 'cssmin', 'uglify']);
-  grunt.registerTask('build', ['clean', 'lint', 'minify']);
+  grunt.registerTask('minify',  ['concat', 'cssmin', 'uglify']);
+  grunt.registerTask('compile', ['sass']);
+  grunt.registerTask('build', ['clean', 'lint', 'compile', 'minify']);
   
   grunt.registerTask('default', ['build', 'connect', 'watch']);
   grunt.registerTask('latch', ['build', 'watch']);
