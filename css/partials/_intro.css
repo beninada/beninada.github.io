@@ -20,8 +20,8 @@
   vertical-align: top;
   width: 0;
   height: 50px;
+}
 
-  > span {
-    position: absolute;
-  }
+.intro-noun > span {
+  position: absolute;
 }
