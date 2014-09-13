@@ -5,3 +5,7 @@ body {
 .row {
   margin: 0;
 }
+
+a:hover {
+  text-decoration: none;
+}

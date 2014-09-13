@@ -18,6 +18,11 @@ module.exports = function(grunt) {
         }
       }
     },
+    autoprefixer: {
+      target: {
+        src: 'css/**/*.css'
+      }
+    },
     cssmin: {
       minify: {
         expand: true,
@@ -63,6 +68,7 @@ module.exports = function(grunt) {
 
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-concat');
+  grunt.loadNpmTasks('grunt-autoprefixer');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-uglify');
@@ -70,7 +76,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
 
   grunt.registerTask('lint',    ['jshint']);
-  grunt.registerTask('minify',  ['concat', 'cssmin', 'uglify']);
+  grunt.registerTask('minify',  ['concat', 'autoprefixer', 'cssmin', 'uglify']);
   grunt.registerTask('build', ['clean', 'lint', 'minify']);
   
   grunt.registerTask('default', ['build', 'connect', 'watch']);

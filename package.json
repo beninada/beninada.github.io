@@ -1,11 +1,10 @@
 {
   "name": "PortfolioBenInada",
   "description": "A portfolio enumerating my work, skills, and just me in general.",
-  "repository":
-    {
-      "type": "git",
-      "url": "https://github.com/beninada/beninada.github.io.git"
-    },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/beninada/beninada.github.io.git"
+  },
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-contrib-clean": "~0.5.0",
@@ -17,6 +16,7 @@
     "grunt-contrib-uglify": "~0.4.0",
     "grunt-contrib-watch": "~0.6.0",
     "grunt-npm-install": "^0.1.0",
-    "load-grunt-tasks": "^0.5.0"
+    "load-grunt-tasks": "^0.5.0",
+    "grunt-autoprefixer": "^1.0.1"
   }
 }
