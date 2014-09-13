@@ -1,0 +1,22 @@
+.navbar a {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.navbar-name {
+  display: block;
+  margin-top: 25px;
+  margin-left: 25px !important;
+}
+
+.navbar-nav > li > a {
+  line-height: inherit;
+  margin-top: 25px;
+  margin-left: 40px;
+  padding: 0;
+}
+
+.navbar-nav.navbar-right:last-child {
+  margin-right: 25px;
+}
