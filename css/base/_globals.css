@@ -9,3 +9,21 @@ body {
 a:hover {
   text-decoration: none;
 }
+
+@media (min-width: 992px) {
+  h1 {
+    font-size: 46px;
+  }
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 46px;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 32px;
+  }
+}
