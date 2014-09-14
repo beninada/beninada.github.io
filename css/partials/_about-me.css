@@ -16,7 +16,7 @@
 
 .about-me-paragraphs {
   margin-top: 36px; /* 50px - h1 line height padding = 36px */
-  margin-bottom: 80px;
+  margin-bottom: 150px;
 }
 
 .about-me p {
@@ -32,4 +32,67 @@
 
 .about-me > .triangle {
   border-color: #fff2dd transparent transparent transparent;
+}
+
+.about-me-hidden {
+  display: none;
+  visibility: hidden;
+}
+
+input[type=checkbox]:checked ~ [for="read-more"] {
+  top: 600px;
+}
+
+[for="read-more"],
+input[type=checkbox] {
+  position: absolute;
+  top: 475px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  cursor: pointer;
+}
+
+[for="read-more"] {
+  width: 20%;
+  text-align: center;
+  padding: .65rem;
+  box-shadow: inset 1px 1px rgba(0, 0, 0, 0.1), inset -1px -1px rgba(0, 0, 0, 0.1);
+}
+
+[for="read-more"]:hover {
+  background: rgba(0,0,0,.5);
+  color: rgb(255,255,255);
+}
+
+[for="read-more"] span:last-of-type {
+  display: none;
+  visibility: hidden;
+}
+
+input[type=checkbox] {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+}
+
+input[type=checkbox]:checked ~ p > .about-me-hidden {
+  display: inline;
+  visibility: visible;
+  width: 100%;
+}
+
+input[type=checkbox]:checked ~ [for="read-more"] span:first-of-type {
+  display: none;
+  visibility: hidden;
+}
+
+input[type=checkbox]:checked ~ [for="read-more"] span:last-of-type {
+  display: block;
+  visibility: visible;
 }
