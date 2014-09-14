@@ -1,7 +1,9 @@
 .works {
+  position: relative;
   width: 100%;
   height: 1017px;
   background-color: #ffffff;
+  z-index: 2;
 }
 
 .works > h1 {
@@ -14,4 +16,8 @@
   font-weight: 700;
   width: 180px;
   height: 45px;   
+}
+
+.works > .triangle {
+  border-color: #fff transparent transparent transparent;
 }

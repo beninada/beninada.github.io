@@ -4,4 +4,5 @@
   height: 90vh;
   padding: 100px;
   color: white;
+  z-index: 1;
 }
