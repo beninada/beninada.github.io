@@ -69,15 +69,22 @@ input[type=checkbox] {
 }
 
 [for="read-more"] {
-  width: 20%;
-  text-align: center;
-  padding: .65rem;
-  box-shadow: inset 1px 1px rgba(0, 0, 0, 0.1), inset -1px -1px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  background-color: #7ba6a8;
+  width: 500px;
+  height: 45px;
 }
 
-[for="read-more"]:hover {
-  background: rgba(0,0,0,.5);
-  color: rgb(255,255,255);
+[for="read-more"] span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
+  font-size: 22px;
+  font-weight: 600;
+  color: #fff;
 }
 
 [for="read-more"] span:last-of-type {
