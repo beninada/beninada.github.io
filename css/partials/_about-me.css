@@ -27,6 +27,17 @@
   text-indent: 2em;
 }
 
+.about-me a {
+  color: #333;
+  text-decoration: underline;
+}
+
+.about-me a:hover {
+  color: #7ba6a8;
+  -webkit-transition: all .2s linear;
+          transition: all .2s linear;
+}
+
 .about-me > .triangle {
   border-color: #fff2dd transparent transparent transparent;
 }

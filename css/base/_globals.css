@@ -2,17 +2,6 @@
   margin: 0;
 }
 
-a {
-  color: #333;
-  text-decoration: underline;
-}
-
-a:hover {
-  color: #7ba6a8;
-  -webkit-transition: all .2s linear;
-          transition: all .2s linear;
-}
-
 .triangle {
   position: absolute;
   left: 50%;
