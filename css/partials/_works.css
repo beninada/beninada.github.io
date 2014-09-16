@@ -2,20 +2,16 @@
   position: relative;
   width: 100%;
   height: 1017px;
-  background-color: #ffffff;
+  background-color: #fff;
   z-index: 2;
 }
 
 .works > h1 {
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 77px;
-  color:  #333333;
-  font-size: 64px;
+  margin: 64px auto 0 auto; /* 78px - h1 line height padding = 64px */
+  color:  #333;
   font-weight: 700;
-  width: 180px;
-  height: 45px;   
+  line-height: 1;
 }
 
 .works > .triangle {
