@@ -7,8 +7,12 @@ body {
     font-size: 46px;
   }
 
-  p {
+  p,
+  label {
     font-size: 16px;
+  }
+  
+  p {
     width: 15em;
   }
 }
@@ -18,19 +22,27 @@ body {
     font-size: 46px;
   }
 
-  p {
+  p,
+  label {
     font-size: 16px;
+  }
+  
+  p {
     width: 18em;
   }
 }
 
 @media (min-width: 480px) {
   h1 {
-    font-size: 64px;
+    font-size: 46px;
   }
 
-  p {
+  p,
+  label {
     font-size: 18px;
+  }
+  
+  p {
     width: 25em;
   }
 }
@@ -40,8 +52,12 @@ body {
     font-size: 64px;
   }
 
-  p {
+  p,
+  label {
     font-size: 22px;
+  }
+  
+  p {
     width: 30em;
   }
 }
@@ -51,8 +67,12 @@ body {
     font-size: 64px;
   }
 
-  p {
+  p,
+  label {
     font-size: 22px;
+  }
+  
+  p {
     width: 30em;
   }
 }
