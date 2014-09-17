@@ -5,10 +5,10 @@
 .triangle {
   position: absolute;
   left: 50%;
+  bottom: -33px;
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
-  bottom: -33px;
   width: 0;
   height: 0;
   border-style: solid;
