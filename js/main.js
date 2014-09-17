@@ -18,3 +18,15 @@ var $span = $('span', $swap).hide();
 
   $span.fadeOut().eq(c).fadeIn().delay(delayTime).show(loop);
 }());
+
+function postContactToGoogle() {
+  var email = $('#email').val();
+  var message = $('#message').val();
+
+  $.ajax({
+    url: "https://docs.google.com/forms/d/1IWlkSg1Utl4ZiHcdjIwwn6ZFU8GCDMyeifUfAM1l0z8/formResponse",
+    data: { "entry.132395288": email, "entry.1268391083": message },
+    type: "POST",
+    dataType: "xml"
+  });
+}
