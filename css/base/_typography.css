@@ -8,7 +8,9 @@ body {
   }
 
   p,
-  label {
+  label,
+  .form-control {
+
     font-size: 16px;
   }
   
@@ -23,7 +25,9 @@ body {
   }
 
   p,
-  label {
+  label,
+  .form-control {
+
     font-size: 16px;
   }
   
@@ -38,7 +42,9 @@ body {
   }
 
   p,
-  label {
+  label,
+  .form-control {
+
     font-size: 18px;
   }
   
@@ -53,7 +59,9 @@ body {
   }
 
   p,
-  label {
+  label,
+  .form-control {
+
     font-size: 22px;
   }
   
@@ -68,7 +76,9 @@ body {
   }
 
   p,
-  label {
+  label,
+  .form-control {
+
     font-size: 22px;
   }
   
