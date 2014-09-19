@@ -1,17 +1,33 @@
 .works {
   position: relative;
   width: 100%;
-  height: 1017px;
   background-color: #fff;
   z-index: 2;
+}
+
+.works > .container {
+  margin-top: 36px;
+  margin-bottom: 80px;
 }
 
 .works > h1 {
   text-align: center;
   margin: 64px auto 0 auto; /* 78px - h1 line height padding = 64px */
-  color:  #333;
   font-weight: 700;
   line-height: 1;
+}
+
+.works img {
+  float: left;
+  clear: left;
+}
+
+.works p {
+  float: right;
+  clear: right;
+  font-family: "ff-tisa-web-pro";
+  text-align: left;
+  text-indent: 2em;
 }
 
 .works > .triangle {
