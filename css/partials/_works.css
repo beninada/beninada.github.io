@@ -10,6 +10,14 @@
   margin-bottom: 80px;
 }
 
+.works .row {
+  margin-bottom: 40px;
+}
+
+.works .row:last-child {
+  margin-bottom: 0;
+}
+
 .works > h1 {
   text-align: center;
   margin: 64px auto 0 auto; /* 78px - h1 line height padding = 64px */
@@ -18,18 +26,40 @@
 }
 
 .works img {
-  float: left;
-  clear: left;
+  float: right;
+}
+
+.works .dylan img {
+  padding-right: 64px;
 }
 
 .works p {
-  float: right;
-  clear: right;
   font-family: "ff-tisa-web-pro";
   text-align: left;
   text-indent: 2em;
+  padding-left: 20px;
 }
 
 .works > .triangle {
   border-color: #fff transparent transparent transparent;
+}
+
+.nasa {
+  height: 255px;
+}
+
+.dylan {
+  height: 230px;
+}
+
+.state-farm {
+  height: 225px;
+}
+
+.logo {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
