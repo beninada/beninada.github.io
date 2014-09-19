@@ -1,39 +1,27 @@
 footer {
-  height: 112px;
   background-color: #212121;
-  color: #fff;
 }
 
-footer > .footer-ownership,
-footer > ul {
-  position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
+footer .container {
+  padding: 50px 0;
 }
 
-footer > .footer-ownership {
-  float: left;
-  font-size: 16px;
-  font-weight: 700;
-  margin-left: 25px;
+footer ul {
+  text-align: center;
+  margin: 0;
 }
 
-footer > ul {
-  float: right;
-  margin-right: 25px;
-}
-
-footer > ul > li {
+footer ul > li {
   display: inline;
   padding-right: 10px;
 }
 
-footer a {
-  color: #fff;
+footer ul > li:last-child {
+  padding-right: 0;
 }
 
+footer,
+footer a,
 footer a:active,
 footer a:focus,
 footer a:hover {
