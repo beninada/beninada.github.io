@@ -22,6 +22,12 @@
   color: #eee;
 }
 
+.intro a,
+.intro a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
 .intro-noun {
   vertical-align: top;
   width: 0;

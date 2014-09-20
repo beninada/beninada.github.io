@@ -18,22 +18,10 @@
 }
 
 .about-me p {
-  font-family: "ff-tisa-web-pro";
   text-align: left;
   margin-left: auto;
   margin-right: auto;
   text-indent: 2em;
-}
-
-.about-me a {
-  color: #333;
-  text-decoration: underline;
-}
-
-.about-me a:hover {
-  color: #7ba6a8;
-  -webkit-transition: all .2s linear;
-          transition: all .2s linear;
 }
 
 .about-me > .triangle {

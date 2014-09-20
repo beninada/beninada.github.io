@@ -36,7 +36,6 @@
 }
 
 .works .container-description > p {
-  font-family: "ff-tisa-web-pro";
   text-align: left;
   text-indent: 2em;
   margin-top: 25px;
@@ -76,6 +75,11 @@
   .state-farm {
     height: 225px;
   }
+}
+
+.works .resume {
+  margin: 0 auto;
+  text-align: center;
 }
 
 .works > .triangle {
