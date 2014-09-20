@@ -12,11 +12,6 @@
   line-height: 1;
 }
 
-.about-me-paragraphs {
-  margin-top: 36px; /* 50px - h1 line height padding = 36px */
-  margin-bottom: 150px;
-}
-
 .about-me p {
   text-align: left;
   margin-left: auto;
@@ -28,11 +23,6 @@
   border-color: #fff2dd transparent transparent transparent;
 }
 
-.about-me-hidden {
-  display: none;
-  visibility: hidden;
-}
-
 [for="read-more"],
 input[type=checkbox] {
   position: absolute;
@@ -42,10 +32,14 @@ input[type=checkbox] {
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
   cursor: pointer;
+  -webkit-transition: top 0s;
+          transition: top 0s;
 }
 
 input[type=checkbox]:checked ~ [for="read-more"] {
   top: 751px;
+  -webkit-transition: top .25s ease-in-out;
+          transition: top .25s ease-in-out;
 }
 
 @media (min-width: 320px) {
@@ -111,9 +105,24 @@ input[type=checkbox]:checked ~ [for="read-more"] {
   color: #fff;
 }
 
-[for="read-more"] span:last-of-type {
-  display: none;
-  visibility: hidden;
+.about-me-paragraphs {
+  margin-top: 36px; /* 50px - h1 line height padding = 36px */
+}
+
+.about-me-paragraphs p:last-of-type {
+  margin-bottom: 50px;
+  -webkit-transition: margin-bottom 0s;
+          transition: margin-bottom 0s;
+}
+
+.about-me-paragraphs input[type=checkbox]:checked ~ p:last-of-type {
+  margin-bottom: 150px;
+  -webkit-transition: margin-bottom 0.25s ease-in-out;
+          transition: margin-bottom 0.25s ease-in-out;
+}
+
+.about-me-hidden {
+  width: 100%;
 }
 
 input[type=checkbox] {
@@ -126,18 +135,30 @@ input[type=checkbox] {
   padding: 0;
 }
 
-input[type=checkbox]:checked ~ p > .about-me-hidden {
-  display: inline;
-  visibility: visible;
-  width: 100%;
+input[type=checkbox] ~ p > .about-me-hidden,
+input[type=checkbox] ~ [for="read-more"] span:first-of-type,
+input[type=checkbox] ~ [for="read-more"] span:last-of-type {
+  -webkit-transition: opacity 0s;
+          transition: opacity 0s;
 }
 
-input[type=checkbox]:checked ~ [for="read-more"] span:first-of-type {
-  display: none;
-  visibility: hidden;
-}
-
+input[type=checkbox]:checked ~ p > .about-me-hidden,
+input[type=checkbox]:checked ~ [for="read-more"] span:first-of-type,
 input[type=checkbox]:checked ~ [for="read-more"] span:last-of-type {
-  display: block;
+  -webkit-transition: opacity 0.5s ease-in-out;
+          transition: opacity 0.5s ease-in-out;
+}
+
+input[type=checkbox]:checked ~ p > .about-me-hidden,
+input[type=checkbox]:checked ~ [for="read-more"] span:last-of-type,
+input[type=checkbox] ~ [for="read-more"] span:first-of-type {
   visibility: visible;
+  opacity: 1;
+}
+
+input[type=checkbox] ~ p > .about-me-hidden,
+input[type=checkbox]:checked ~ [for="read-more"] span:first-of-type,
+input[type=checkbox] ~ [for="read-more"] span:last-of-type {
+  visibility: hidden;
+  opacity: 0;
 }
