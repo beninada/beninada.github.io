@@ -14,6 +14,13 @@
 .navbar-header {
   width: 100%;
   padding: 0 25px;
+  margin: 0 !important;
+}
+
+@media (max-width: 480px) {
+  .navbar-header {
+    padding: 0;
+  }
 }
 
 .navbar-name {
