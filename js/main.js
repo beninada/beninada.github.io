@@ -10,13 +10,13 @@ for (var i = 0; i < nouns.length; i++) {
 var $span = $('span', $swap).hide();
 
 (function loop() {
-  c = ++c % nouns.length;
-
   $swap.animate({
     width: $span.eq(c).width()
   });
 
   $span.fadeOut().eq(c).fadeIn().delay(delayTime).show(loop);
+  
+  c = ++c % nouns.length;
 }());
 
 function postContactToGoogle() {
