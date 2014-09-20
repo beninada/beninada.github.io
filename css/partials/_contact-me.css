@@ -22,7 +22,39 @@
 .btn-send {
   display: block;
   color: #333;
-  width: 60%;
+  width: 260px;
+}
+
+@media (min-width: 320px) {
+  #email,
+  #message,
+  .btn-send {
+    width: 280px
+  }
+}
+
+@media (min-width: 480px) {
+  #email,
+  #message,
+  .btn-send {
+    width: 440px
+  }
+}
+
+@media (min-width: 768px) {
+  #email,
+  #message,
+  .btn-send {
+    width: 650px;
+  }
+}
+
+@media (min-width: 992px) {
+  #email,
+  #message,
+  .btn-send {
+    width: 650px;
+  }
 }
 
 #email {
