@@ -6,12 +6,12 @@
 }
 
 .works > .container {
-  margin-top: 36px;
+  margin-top: 50px;
   margin-bottom: 80px;
 }
 
 .works .row {
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 
 .works .row:last-child {
@@ -25,41 +25,59 @@
   line-height: 1;
 }
 
-.works img {
-  float: right;
+.works .container-logo > img,
+.works .container-description > p {
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  float: none;
 }
 
-.works .dylan img {
-  padding-right: 64px;
-}
-
-.works p {
+.works .container-description > p {
   font-family: "ff-tisa-web-pro";
   text-align: left;
   text-indent: 2em;
+  margin-top: 25px;
   padding-left: 20px;
+}
+
+@media (min-width: 992px) {
+  .works .container-logo {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  
+  .works .container-logo > img,
+  .works .container-logo > img {
+    float: right;
+  }
+
+  .works .dylan .container-logo > img {
+    padding-right: 64px;
+  } 
+
+  .works .container-description > p {
+    margin-top: 0;
+  }
+
+  .nasa {
+    height: 255px;
+  }
+
+  .dylan {
+    height: 230px;
+  }
+
+  .state-farm {
+    height: 225px;
+  }
 }
 
 .works > .triangle {
   border-color: #fff transparent transparent transparent;
-}
-
-.nasa {
-  height: 255px;
-}
-
-.dylan {
-  height: 230px;
-}
-
-.state-farm {
-  height: 225px;
-}
-
-.logo {
-  position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
 }
