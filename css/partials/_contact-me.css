@@ -73,7 +73,46 @@
 }
 
 .btn-send,
+.btn-send:active,
+.btn-send:focus,
 .btn-send:hover {
   background-color: #7ba6a8;
   color: #fff;
+  outline: 0 !important;
+  box-shadow: none;
+}
+
+.btn-send i {
+  display: inline-block;
+  visibility: visible;
+  opacity: 1;
+  width: 0;
+}
+
+.btn-send span {
+  display: inline-block;
+  visibility: hidden;
+  opacity: 0;
+  width: 0
+}
+
+.posted .btn-send,
+.posted #email,
+.posted #message {
+  cursor: default;
+}
+
+.posted .btn-send i {
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 0.5s ease-in-out, width 0.5s ease-in-out;
+          transition: opacity 0.5s ease-in-out, width 0.5s ease-in-out;
+}
+
+.posted .btn-send span {
+  visibility: visible;
+  opacity: 1;
+  width: 100%;
+  -webkit-transition: opacity 0.5s ease-in-out, width 0.5s ease-in-out;
+          transition: opacity 0.5s ease-in-out, width 0.5s ease-in-out;
 }
