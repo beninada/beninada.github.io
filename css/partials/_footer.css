@@ -1,0 +1,29 @@
+footer {
+  background-color: #212121;
+}
+
+footer .container {
+  padding: 50px 0;
+}
+
+footer ul {
+  text-align: center;
+  margin: 0;
+}
+
+footer ul > li {
+  display: inline;
+  padding-right: 10px;
+}
+
+footer ul > li:last-child {
+  padding-right: 0;
+}
+
+footer,
+footer a,
+footer a:active,
+footer a:focus,
+footer a:hover {
+  color: #fff;
+}

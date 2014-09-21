@@ -13,21 +13,176 @@
         <meta name="description" content="Hello. My name is Ben Inada. I'm a web designer, student, and intern at NASA's Jet Propulsion Laboratory.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
+        <!-- Typekit -->
+        <script type="text/javascript" src="//use.typekit.net/zwa6rbv.js"></script>
+        <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+        <!-- Bootstrap -->
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+        <!-- Main Stylesheet -->
         <link rel="stylesheet" href="css/compiled.min.css">
 
     </head>
     <body>
 
-        <h1 class="hello">
-            Hello. I'm a bit busy redesigning this site.<br>
-            It should be ready sometime in October 2014.
-        </h1>
+        <section class="intro row">
 
-        <h1 class="check-me-out">
-            For now, feel free to check me out on <a href="https://www.behance.net/beninada">Behance</a>, <a href="https://linkedin.com/in/beninada">LinkedIn</a>, and <a href="http://benthegreat.tumblr.com">Tumblr</a>.
-        </h1>
+            <nav class="navbar" role="navigation">
 
+                <div class="container">
+
+                    <div class="navbar-header">
+
+                        <a class="navbar-name" href="#">Ben Inada</a>
+
+                        <ul class="nav navbar-nav">
+                            <li>
+                                <a href="#about"><span>About Me</span><i class="fa fa-child" href="#about"></i></a>
+                            </li>
+                            <li>
+                                <a href="#works"><span>Works</span><i class="fa fa-briefcase" href="#works"></i></a>
+                            </li>
+                            <li>
+                                <a href="#contact"><span>Contact Me</span><i class="fa fa-envelope" href="#contact"></i></a>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </nav>
+
+            <h1>I build sturdy, long-living <span class="intro-noun"></span>.</h1>
+
+            <div class="triangle"></div>
+
+        </section>
+
+        <section class="about-me row" id="about">
+
+            <h1>About Me</h1>
+
+            <div class="about-me-paragraphs">
+                <input type="checkbox" id="read-more" role="button">
+                <label for="read-more" onclick=""><span>Read more</span><span>Read less</span></label>
+
+                <p>
+                    I’m a User Experience Designer at NASA’s Jet Propulsion Laboratory (JPL) and a Computer Science undergrad at UC San Diego. I live in Pasadena, CA, but I’ll be moving back to school in October to complete my degree by June 2015. Learning, making, and spreading good design is my passion.
+                </p>
+
+                <p>
+                    Although most of my time is spent building the <a href="https://github.com/Open-MBEE/EMS-Webapp">next greatest interfaces</a> for architecting spacecraft missions at JPL, I do delve into my own side projects as well. You can check out the design work that I’ve done for these projects on my <a href="https://www.behance.net/beninada">Behance portfolio</a>. <span class="about-me-hidden">I am currently an open freelancer, so if you’d like to discuss something I can help you design &amp; build, feel free to <a href="mailto:benjamin.inada@gmail.com">send me an email</a>. I’m always open to a chat about User Experience, Usability, Typography, as well as just good design in general.</span>
+                </p>
+
+            </div>
+
+            <div class="triangle"></div>
+
+        </section>
+        
+        <section class="works row" id="works">
+
+            <h1>Works</h1>
+
+            <div class="container">
+
+                <div class="nasa row">
+
+                    <div class="container-logo col-xs-12 col-md-4 col-lg-4">
+                        <img src="assets/logo-nasa.png" alt="NASA">
+                    </div>
+
+                    <div class="container-description col-xs-12 col-md-8 col-lg-8">
+                        <p>
+                            OpenMBEE (Open Model-based Engineering Environment) is a suite of web and mobile apps that is revolutionizing the way spacecraft are built. My responsibilities in leading UX Design in OpenMBEE include performing user research, defining OpenMBEE's visual language, and using HTML5, CSS3, and AngularJS to build the designs I prototype in Photoshop. Check out my work on <a href="https://github.com/beninada">Github</a>.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="dylan row">
+
+                    <div class="container-logo col-xs-12 col-md-4 col-lg-4">
+                        <img src="assets/logo-626.png" alt="626">
+                    </div>
+
+                    <div class="container-description col-xs-12 col-md-8 col-lg-8">
+                        <p>
+                            I’m currently a mentor to Dylan Grecius, a talented web developer and designer at Clark Magnet High School in Glendale, CA. With my experience in User Experience  Design and Agile Web Development, I provide Dylan both the design and development direction he needs to advance his senior project. What’s 696, you say? It’s the <a href="http://www.team696.org">robotics club</a> Dylan is a part of. <a href="">This</a> kid’s smart.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="state-farm row">
+
+                    <div class="container-logo col-xs-12 col-md-4 col-lg-4">
+                        <img src="assets/logo-state-farm.png" alt="State Farm">
+                    </div>
+
+                    <div class="container-description col-xs-12 col-md-8 col-lg-8">
+                        <p>
+                            I didn’t do much design work for State Farm at all. However, a knack for good design is what made me a great fit for the role of Agent Staff. With a background in User Experience, I was able to conduct effective customer research and provide hand-crafted solutions to problems at warp speed. My current clients reap the benefits of this skillset daily.
+                        </p>
+                    </div>
+
+                </div>
+
+                <p class="resume row">
+                    Oh, into resumes? Check <a href="https://drive.google.com/file/d/0Bwh7_7ff3e9tTkNSeEd5NXpVX1k/edit?usp=sharing">mine</a> out.
+                </p>
+
+            </div>
+
+
+            <div class="triangle"></div>
+            
+        </section>
+
+        <section class="contact-me row" id="contact">
+
+            <h1>Contact Me</h1>
+
+            <div class="form-group">
+
+                <input id="email" class="form-control" name="email" type="email" placeholder="Your email address *">
+
+                <textarea id="message" class="form-control" name="message" type="text" rows="5" placeholder="Your message *"></textarea>
+
+                <button class="btn-send btn" type="button" onclick="postContact()"><i class="fa fa-lg fa-paper-plane"></i><span>Thanks! We'll be in touch.</span></button>
+
+            </div>
+
+        </section>
+
+        <footer class="row">
+
+            <div class="container">
+
+                <ul class="col-xs-12">
+                    <li><a href="https://www.behance.net/beninada"><i class="fa fa-3x fa-behance-square"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/beninada"><i class="fa fa-3x fa-linkedin-square"></i></a></li>
+                    <li><a href="https://github.com/beninada"><i class="fa fa-3x fa-github-square"></i></a></li>
+                    <li><a href="https://twitter.com/beninada"><i class="fa fa-3x fa-twitter-square"></i></a></li>
+                    <li><a href="http://benthegreat.tumblr.com/"><i class="fa fa-3x fa-tumblr-square"></i></a></li>
+                </ul>
+
+            </div>
+
+        </footer>
+
+        <!-- jQuery -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+        <!-- Bootstrap -->
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+        <!-- Google Analytics -->
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
             function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
@@ -36,6 +191,9 @@
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-54518434-1');ga('send','pageview');
         </script>
+        
+        <!-- Main Script -->
+        <script src="js/compiled.min.js"></script>
 
     </body>
 </html>

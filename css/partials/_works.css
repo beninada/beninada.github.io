@@ -1,0 +1,87 @@
+.works {
+  position: relative;
+  width: 100%;
+  background-color: #fff;
+  z-index: 2;
+}
+
+.works > .container {
+  margin-top: 50px;
+  margin-bottom: 80px;
+}
+
+.works .row {
+  margin-bottom: 50px;
+}
+
+.works .row:last-child {
+  margin-bottom: 0;
+}
+
+.works > h1 {
+  text-align: center;
+  margin: 64px auto 0 auto; /* 78px - h1 line height padding = 64px */
+  font-weight: 700;
+  line-height: 1;
+}
+
+.works .container-logo > img,
+.works .container-description > p {
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  float: none;
+}
+
+.works .container-description > p {
+  text-align: left;
+  text-indent: 2em;
+  margin-top: 25px;
+  padding-left: 20px;
+}
+
+@media (min-width: 992px) {
+  .works .container-logo {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  
+  .works .container-logo > img,
+  .works .container-logo > img {
+    float: right;
+  }
+
+  .works .dylan .container-logo > img {
+    padding-right: 64px;
+  } 
+
+  .works .container-description > p {
+    margin-top: 0;
+  }
+
+  .nasa {
+    height: 255px;
+  }
+
+  .dylan {
+    height: 230px;
+  }
+
+  .state-farm {
+    height: 225px;
+  }
+}
+
+.works .resume {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.works > .triangle {
+  border-color: #fff transparent transparent transparent;
+}
