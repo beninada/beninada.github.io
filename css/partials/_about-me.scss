@@ -1,15 +1,6 @@
 .about-me {
-  position: relative;
-  width: 100%;
   background-color: $about-me-background-color;
   z-index: 3;
-}
-
-.about-me > h1 {
-  text-align: center;
-  margin: 64px auto 0 auto; /* 78px - h1 line height padding = 64px */
-  font-weight: 700;
-  line-height: 1;
 }
 
 .about-me p {

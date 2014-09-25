@@ -1,10 +1,11 @@
 @import "vendor/bourbon/bourbon";
 @import "vendor/bootstrap-sass/bootstrap";
 
-@import "base/typography";
-@import "base/colors";
-@import "base/overrides";
+@import "modules/typography";
+@import "modules/colors";
+@import "modules/overrides";
 
+@import "partials/base";
 @import "partials/navbar";
 @import "partials/intro";
 @import "partials/about-me";

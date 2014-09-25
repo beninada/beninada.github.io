@@ -1,16 +1,10 @@
 .contact-me {
-  position: relative;
-  width: 100%;
   background-color: $black;
   z-index: 1;
-}
 
-.contact-me > h1 {
-  text-align: center;
-  margin: 64px auto 0 auto; /* 78px - h1 line height padding = 64px */
-  color:  $white;
-  font-weight: 700;
-  line-height: 1;
+  .section-title {
+    color: $white;
+  }
 }
 
 .contact-me > .form-group {

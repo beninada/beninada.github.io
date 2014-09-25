@@ -1,0 +1,14 @@
+.intro,
+.about-me,
+.works,
+.contact-me {
+  position: relative;
+  width: 100%;
+}
+
+.section-title {
+  text-align: center;
+  margin: 64px auto 0 auto; /* 78px - h1 line height padding = 64px */
+  font-weight: 700;
+  line-height: 1;
+}

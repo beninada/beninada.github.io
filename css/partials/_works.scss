@@ -1,6 +1,4 @@
 .works {
-  position: relative;
-  width: 100%;
   background-color: $white;
   z-index: 2;
 }
@@ -16,13 +14,6 @@
 
 .works .row:last-child {
   margin-bottom: 0;
-}
-
-.works > h1 {
-  text-align: center;
-  margin: 64px auto 0 auto; /* 78px - h1 line height padding = 64px */
-  font-weight: 700;
-  line-height: 1;
 }
 
 .works .container-logo > img,
