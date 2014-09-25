@@ -1,14 +1,14 @@
 .contact-me {
   position: relative;
   width: 100%;
-  background-color: #333;
+  background-color: $black;
   z-index: 1;
 }
 
 .contact-me > h1 {
   text-align: center;
   margin: 64px auto 0 auto; /* 78px - h1 line height padding = 64px */
-  color:  #fff;
+  color:  $white;
   font-weight: 700;
   line-height: 1;
 }
@@ -21,7 +21,7 @@
 #message,
 .btn-send {
   display: block;
-  color: #333;
+  color: $black;
   width: 260px;
 }
 
@@ -76,8 +76,8 @@
 .btn-send:active,
 .btn-send:focus,
 .btn-send:hover {
-  background-color: #7ba6a8;
-  color: #fff;
+  background-color: $link-hover-color;
+  color: $white;
   outline: 0 !important;
   box-shadow: none;
 }

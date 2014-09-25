@@ -1,7 +1,7 @@
 .works {
   position: relative;
   width: 100%;
-  background-color: #fff;
+  background-color: $white;
   z-index: 2;
 }
 
@@ -79,5 +79,5 @@
 }
 
 .works > .triangle {
-  border-color: #fff transparent transparent transparent;
+  border-color: $white transparent transparent transparent;
 }

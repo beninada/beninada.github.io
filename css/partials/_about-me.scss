@@ -1,7 +1,7 @@
 .about-me {
   position: relative;
   width: 100%;
-  background-color: #fff2dd;
+  background-color: $about-me-background-color;
   z-index: 3;
 }
 
@@ -20,7 +20,7 @@
 }
 
 .about-me > .triangle {
-  border-color: #fff2dd transparent transparent transparent;
+  border-color: $about-me-background-color transparent transparent transparent;
 }
 
 [for="read-more"],
@@ -73,7 +73,7 @@ input[type=checkbox]:checked ~ [for="read-more"] {
 
 [for="read-more"] {
   border-radius: 6px;
-  background-color: #7ba6a8;
+  background-color: $link-hover-color;
   height: 45px;
   width: 220px;
 }
@@ -96,7 +96,7 @@ input[type=checkbox]:checked ~ [for="read-more"] {
   left: 50%;
   @include transform(translate(-50%,-50%));
   font-weight: 600;
-  color: #fff;
+  color: $white;
 }
 
 .about-me-paragraphs {

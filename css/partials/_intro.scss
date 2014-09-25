@@ -2,7 +2,7 @@
   position: relative;
   width: 100%;
   height: 90vh;
-  background-color: #300000;
+  background-color: $intro-background-color;
   z-index: 4;
 }
 
@@ -15,14 +15,14 @@
   padding: 0 25px;
   width: 100%;
   text-align: center;
-  font-size: 32px;
+  font-size: ceil(modular-scale($font-size-base, 2, $augmented-fourth));
   font-weight: 700;
   color: #eee;
 }
 
 .intro a,
 .intro a:hover {
-  color: #fff;
+  color: $white;
   text-decoration: none;
 }
 
@@ -36,17 +36,17 @@
 }
 
 .intro > .triangle {
-  border-color: #300000 transparent transparent transparent;
+  border-color: $intro-background-color transparent transparent transparent;
 }
 
 @media (min-width: $screen-md) {
   .intro > h1 {
-    font-size: 46px;
+    font-size: ceil(modular-scale($font-size-base, 3, $augmented-fourth));
   }
 }
 
 @media(min-width: $screen-lg) {
   .intro > h1 {
-    font-size: 46px;
+    font-size: ceil(modular-scale($font-size-base, 3, $augmented-fourth));
   }
 }

@@ -1,5 +1,5 @@
 footer {
-  background-color: #212121;
+  background-color: $footer-background-color;
 }
 
 footer .container {
@@ -25,5 +25,5 @@ footer a,
 footer a:active,
 footer a:focus,
 footer a:hover {
-  color: #fff;
+  color: $white;
 }
