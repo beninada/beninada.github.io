@@ -28,18 +28,14 @@ input[type=checkbox] {
   position: absolute;
   left: 50%;
   top: 597px;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
+  @include transform(translateX(-50%));
   cursor: pointer;
-  -webkit-transition: top 0s;
-          transition: top 0s;
+  @include transition(top 0s);
 }
 
 input[type=checkbox]:checked ~ [for="read-more"] {
   top: 751px;
-  -webkit-transition: top .25s ease-in-out;
-          transition: top .25s ease-in-out;
+  @include transition(top .25s ease-in-out);
 }
 
 @media (min-width: 320px) {
@@ -98,9 +94,7 @@ input[type=checkbox]:checked ~ [for="read-more"] {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%,-50%);
-      -ms-transform: translate(-50%,-50%);
-          transform: translate(-50%,-50%);
+  @include transform(translate(-50%,-50%));
   font-weight: 600;
   color: #fff;
 }
@@ -111,14 +105,12 @@ input[type=checkbox]:checked ~ [for="read-more"] {
 
 .about-me-paragraphs p:last-of-type {
   margin-bottom: 50px;
-  -webkit-transition: margin-bottom 0s;
-          transition: margin-bottom 0s;
+  @include transition(margin-bottom 0s);
 }
 
 .about-me-paragraphs input[type=checkbox]:checked ~ p:last-of-type {
   margin-bottom: 150px;
-  -webkit-transition: margin-bottom 0.25s ease-in-out;
-          transition: margin-bottom 0.25s ease-in-out;
+  @include transition(margin-bottom 0.25s ease-in-out);
 }
 
 .about-me-hidden {
@@ -138,15 +130,13 @@ input[type=checkbox] {
 input[type=checkbox] ~ p > .about-me-hidden,
 input[type=checkbox] ~ [for="read-more"] span:first-of-type,
 input[type=checkbox] ~ [for="read-more"] span:last-of-type {
-  -webkit-transition: opacity 0s;
-          transition: opacity 0s;
+  @include transition(opacity 0s);
 }
 
 input[type=checkbox]:checked ~ p > .about-me-hidden,
 input[type=checkbox]:checked ~ [for="read-more"] span:first-of-type,
 input[type=checkbox]:checked ~ [for="read-more"] span:last-of-type {
-  -webkit-transition: opacity 0.5s ease-in-out;
-          transition: opacity 0.5s ease-in-out;
+  @include transition(opacity 0.5s ease-in-out);
 }
 
 input[type=checkbox]:checked ~ p > .about-me-hidden,

@@ -105,14 +105,12 @@
 .posted .btn-send i {
   visibility: hidden;
   opacity: 0;
-  -webkit-transition: opacity 0.5s ease-in-out, width 0.5s ease-in-out;
-          transition: opacity 0.5s ease-in-out, width 0.5s ease-in-out;
+  @include transition(opacity 0.5s ease-in-out, width 0.5s ease-in-out);
 }
 
 .posted .btn-send span {
   visibility: visible;
   opacity: 1;
   width: 100%;
-  -webkit-transition: opacity 0.5s ease-in-out, width 0.5s ease-in-out;
-          transition: opacity 0.5s ease-in-out, width 0.5s ease-in-out;
+  @include transition(opacity 0.5s ease-in-out, width 0.5s ease-in-out);
 }

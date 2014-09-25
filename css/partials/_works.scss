@@ -29,9 +29,7 @@
 .works .container-description > p {
   position: relative;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
+  @include transform(translateX(-50%));
   float: none;
 }
 
@@ -46,9 +44,7 @@
   .works .container-logo {
     position: relative;
     top: 50%;
-    -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-            transform: translateY(-50%);
+    @include transform(translateY(-50%));
   }
   
   .works .container-logo > img,
