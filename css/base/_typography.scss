@@ -1,6 +1,17 @@
+$font-family-sans-serif: "proxima-nova", "Helvetica Neue", helvetica, arial, sans-serif;
+$font-family-serif: "ff-tisa-web-pro", Georgia, "Times New Roman", Times, serif;
+
+$font-size-base: 16px;
+$font-size-scale-1: ceil(modular-scale($font-size-base, 1, $augmented-fourth));
+$font-size-scale-2: ceil(modular-scale($font-size-base, 2, $augmented-fourth));
+$font-size-scale-3: ceil(modular-scale($font-size-base, 3, $augmented-fourth));
+$font-size-scale-4: ceil(modular-scale($font-size-base, 4, $augmented-fourth));
+
+$screen-xxs: 320px;
+
 @media (max-width: 319px) {
   h1 {
-    font-size: ceil(modular-scale($font-size-base, 3, $augmented-fourth));
+    font-size: $font-size-scale-3;
   }
 
   p,
@@ -16,7 +27,7 @@
 
 @media (min-width: $screen-xxs) {
   h1 {
-    font-size: ceil(modular-scale($font-size-base, 3, $augmented-fourth));
+    font-size: $font-size-scale-3;
   }
 
   p,
@@ -32,7 +43,7 @@
 
 @media (min-width: $screen-xs) {
   h1 {
-    font-size: ceil(modular-scale($font-size-base, 3, $augmented-fourth));
+    font-size: $font-size-scale-3;
   }
 
   p,
@@ -48,13 +59,13 @@
 
 @media (min-width: $screen-sm) {
   h1 {
-    font-size: ceil(modular-scale($font-size-base, 4, $augmented-fourth));
+    font-size: $font-size-scale-4;
   }
 
   p,
   label,
   .form-control {
-    font-size: ceil(modular-scale($font-size-base, 1, $augmented-fourth));
+    font-size: $font-size-scale-1;
   }
   
   p {
@@ -68,13 +79,13 @@
 
 @media (min-width: $screen-md) {
   h1 {
-    font-size: ceil(modular-scale($font-size-base, 4, $augmented-fourth));
+    font-size: $font-size-scale-4;
   }
 
   p,
   label,
   .form-control {
-    font-size: ceil(modular-scale($font-size-base, 1, $augmented-fourth));
+    font-size: $font-size-scale-1;
   }
   
   p {

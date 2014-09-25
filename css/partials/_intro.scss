@@ -15,7 +15,7 @@
   padding: 0 25px;
   width: 100%;
   text-align: center;
-  font-size: ceil(modular-scale($font-size-base, 2, $augmented-fourth));
+  font-size: $font-size-scale-2;
   font-weight: 700;
   color: #eee;
 }
@@ -41,12 +41,12 @@
 
 @media (min-width: $screen-md) {
   .intro > h1 {
-    font-size: ceil(modular-scale($font-size-base, 3, $augmented-fourth));
+    font-size: $font-size-scale-3;
   }
 }
 
 @media(min-width: $screen-lg) {
   .intro > h1 {
-    font-size: ceil(modular-scale($font-size-base, 3, $augmented-fourth));
+    font-size: $font-size-scale-3;
   }
 }

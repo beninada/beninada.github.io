@@ -27,7 +27,7 @@
 .navbar a,
 .navbar-nav > li > a {
   color: $white;
-  font-size: ceil(modular-scale($font-size-base, 1, $augmented-fourth));
+  font-size: $font-size-scale-1;
   font-weight: 600;
   line-height: inherit;
   margin-top: 25px;
