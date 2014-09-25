@@ -52,13 +52,13 @@
   display: inherit;
 }
 
-@media (min-width: 480px) {
+@media (min-width: $screen-xs) {
   .navbar-nav > li > a {
     margin-left: 40px;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $screen-sm) {
   .navbar-nav > li > a > span {
     display: inherit;
   } 

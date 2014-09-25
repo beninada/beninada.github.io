@@ -14,7 +14,7 @@
   }
 }
 
-@media (min-width: 320px) {
+@media (min-width: $screen-xxs) {
   h1 {
     font-size: ceil(modular-scale($font-size-base, 3, $augmented-fourth));
   }
@@ -30,7 +30,7 @@
   }
 }
 
-@media (min-width: 480px) {
+@media (min-width: $screen-xs) {
   h1 {
     font-size: ceil(modular-scale($font-size-base, 3, $augmented-fourth));
   }
@@ -46,7 +46,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $screen-sm) {
   h1 {
     font-size: ceil(modular-scale($font-size-base, 4, $augmented-fourth));
   }
@@ -66,7 +66,7 @@
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: $screen-md) {
   h1 {
     font-size: ceil(modular-scale($font-size-base, 4, $augmented-fourth));
   }
@@ -86,6 +86,6 @@
   }
 }
 
-@media(min-width: 1200px) {
+@media(min-width: $screen-lg) {
 
 }

@@ -39,13 +39,13 @@
   border-color: #300000 transparent transparent transparent;
 }
 
-@media (min-width: 992px) {
+@media (min-width: $screen-md) {
   .intro > h1 {
     font-size: 46px;
   }
 }
 
-@media(min-width: 1200px) {
+@media(min-width: $screen-lg) {
   .intro > h1 {
     font-size: 46px;
   }
