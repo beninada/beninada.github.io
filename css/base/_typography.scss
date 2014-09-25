@@ -1,13 +1,12 @@
 @media (max-width: 319px) {
   h1 {
-    font-size: 46px;
+    font-size: ceil(modular-scale($font-size-base, 3, $augmented-fourth));
   }
 
   p,
   label,
   .form-control {
-
-    font-size: 16px;
+    font-size: $font-size-base;
   }
   
   p {
@@ -17,14 +16,13 @@
 
 @media (min-width: 320px) {
   h1 {
-    font-size: 46px;
+    font-size: ceil(modular-scale($font-size-base, 3, $augmented-fourth));
   }
 
   p,
   label,
   .form-control {
-
-    font-size: 16px;
+    font-size: $font-size-base;
   }
   
   p {
@@ -34,13 +32,12 @@
 
 @media (min-width: 480px) {
   h1 {
-    font-size: 46px;
+    font-size: ceil(modular-scale($font-size-base, 3, $augmented-fourth));
   }
 
   p,
   label,
   .form-control {
-
     font-size: 18px;
   }
   
@@ -51,14 +48,13 @@
 
 @media (min-width: 768px) {
   h1 {
-    font-size: 64px;
+    font-size: ceil(modular-scale($font-size-base, 4, $augmented-fourth));
   }
 
   p,
   label,
   .form-control {
-
-    font-size: 22px;
+    font-size: ceil(modular-scale($font-size-base, 1, $augmented-fourth));
   }
   
   p {
@@ -72,14 +68,13 @@
 
 @media (min-width: 992px) {
   h1 {
-    font-size: 64px;
+    font-size: ceil(modular-scale($font-size-base, 4, $augmented-fourth));
   }
 
   p,
   label,
   .form-control {
-
-    font-size: 22px;
+    font-size: ceil(modular-scale($font-size-base, 1, $augmented-fourth));
   }
   
   p {
