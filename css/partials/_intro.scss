@@ -2,6 +2,16 @@
   height: 90vh;
   background-color: $intro-background-color;
   z-index: 4;
+
+  a,
+  a:hover {
+    color: $white;
+    text-decoration: none;
+  }
+
+  > .triangle {
+    border-color: $intro-background-color transparent transparent transparent;
+  }
 }
 
 .intro-main-heading {
@@ -30,12 +40,6 @@
   }
 }
 
-.intro a,
-.intro a:hover {
-  color: $white;
-  text-decoration: none;
-}
-
 .intro-noun {
   vertical-align: top;
   width: 0;
@@ -43,8 +47,4 @@
 
 .intro-noun > span {
   position: absolute;
-}
-
-.intro > .triangle {
-  border-color: $intro-background-color transparent transparent transparent;
 }

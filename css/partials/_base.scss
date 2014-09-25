@@ -12,3 +12,15 @@
   font-weight: 700;
   line-height: 1;
 }
+
+.triangle {
+  position: absolute;
+  left: 50%;
+  bottom: -32px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 33px 42.5px 0 42.5px;
+  @include transform(translateX(-50%));
+  -moz-transform: translateX(-50%) scale(0.9999);
+}

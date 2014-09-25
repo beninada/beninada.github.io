@@ -5,10 +5,10 @@
   .section-title {
     color: $white;
   }
-}
 
-.contact-me > .form-group {
-  margin: 0 auto;
+  > .form-group {
+    margin: 0 auto;
+  }
 }
 
 #email,
@@ -62,49 +62,53 @@
 }
 
 .btn-send {
-  margin: 10px auto 80px auto;
   height: 45px;
-}
-
-.btn-send,
-.btn-send:active,
-.btn-send:focus,
-.btn-send:hover {
+  margin: 10px auto 80px auto;
   background-color: $link-hover-color;
   color: $white;
   outline: 0 !important;
   box-shadow: none;
+
+  i {
+    display: inline-block;
+    visibility: visible;
+    opacity: 1;
+    width: 0;
+  }
+
+  span {
+    display: inline-block;
+    visibility: hidden;
+    opacity: 0;
+    width: 0
+  }
+
+  &:active,
+  &:focus,
+  &:hover {
+    @extend .btn-send;
+  }
 }
 
-.btn-send i {
-  display: inline-block;
-  visibility: visible;
-  opacity: 1;
-  width: 0;
-}
+.posted {
+  .btn-send {
+    i {
+      visibility: hidden;
+      opacity: 0;
+      @include transition(opacity 0.5s ease-in-out, width 0.5s ease-in-out);
+    }
 
-.btn-send span {
-  display: inline-block;
-  visibility: hidden;
-  opacity: 0;
-  width: 0
-}
+    span {
+      visibility: visible;
+      opacity: 1;
+      width: 100%;
+      @include transition(opacity 0.5s ease-in-out, width 0.5s ease-in-out);
+    }
+  }
 
-.posted .btn-send,
-.posted #email,
-.posted #message {
-  cursor: default;
-}
-
-.posted .btn-send i {
-  visibility: hidden;
-  opacity: 0;
-  @include transition(opacity 0.5s ease-in-out, width 0.5s ease-in-out);
-}
-
-.posted .btn-send span {
-  visibility: visible;
-  opacity: 1;
-  width: 100%;
-  @include transition(opacity 0.5s ease-in-out, width 0.5s ease-in-out);
+  .btn-send,
+  #email,
+  #message {
+    cursor: default;
+  }
 }

@@ -1,53 +1,61 @@
 .works {
   background-color: $white;
   z-index: 2;
+
+  > .container {
+    margin-top: 50px;
+    margin-bottom: 80px;
+  }
+
+  .row {
+    margin-bottom: 50px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  > .triangle {
+    border-color: $white transparent transparent transparent;
+  }
 }
 
-.works > .container {
-  margin-top: 50px;
-  margin-bottom: 80px;
-}
-
-.works .row {
-  margin-bottom: 50px;
-}
-
-.works .row:last-child {
-  margin-bottom: 0;
-}
-
-.works .container-logo > img,
-.works .container-description > p {
+.container-logo > img,
+.container-description > p {
   position: relative;
   left: 50%;
   @include transform(translateX(-50%));
   float: none;
 }
 
-.works .container-description > p {
+.container-description > p {
   text-align: left;
   text-indent: 2em;
   margin-top: 25px;
   padding-left: 20px;
 }
 
+.resume {
+  margin: 0 auto;
+  text-align: center;
+}
+
 @media (min-width: $screen-md) {
-  .works .container-logo {
+  .container-logo {
     position: relative;
     top: 50%;
     @include transform(translateY(-50%));
+
+    > img {
+      float: right;
+    }
   }
   
-  .works .container-logo > img,
-  .works .container-logo > img {
-    float: right;
-  }
-
-  .works .dylan .container-logo > img {
+  .dylan .container-logo > img {
     padding-right: 64px;
   } 
 
-  .works .container-description > p {
+  .container-description > p {
     margin-top: 0;
   }
 
@@ -62,13 +70,4 @@
   .state-farm {
     height: 225px;
   }
-}
-
-.works .resume {
-  margin: 0 auto;
-  text-align: center;
-}
-
-.works > .triangle {
-  border-color: $white transparent transparent transparent;
 }
