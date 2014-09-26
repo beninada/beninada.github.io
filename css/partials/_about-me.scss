@@ -95,11 +95,11 @@ input[type=checkbox] {
 @media (min-width: $screen-xxs) {
   [for="read-more"],
   input[type=checkbox] {
-    top: 510px;
+    top: 530px;
   }
 
   input[type=checkbox]:checked ~ [for="read-more"] {
-    top: 645px;
+    top: 665px;
   }
 }
 
