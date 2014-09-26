@@ -9,6 +9,7 @@ Installation
 git clone [clone-url] beninada
 cd beninada
 npm i -d
+bower install
 ```
 
 Running

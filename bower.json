@@ -1,0 +1,20 @@
+{
+  "name": "PortfolioBenInada",
+  "version": "0.1.0",
+  "homepage": "https://github.com/beninada/beninada.github.io",
+  "authors": [
+    "Benjamin Inada <benjamin.inada@gmail.com>"
+  ],
+  "description": "A portfolio enumerating my work, skills, and just me in general.",
+  "main": "index.html",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "smooth-scroll": "https://github.com/cferdinandi/smooth-scroll.git",
+    "bourbon": "3.2.3"
+  }
+}
