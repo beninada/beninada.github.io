@@ -1,29 +1,29 @@
 footer {
-  background-color: $footer-background-color;
-}
-
-footer .container {
-  padding: 50px 0;
-}
-
-footer ul {
-  text-align: center;
-  margin: 0;
-}
-
-footer ul > li {
-  display: inline;
-  padding-right: 10px;
-}
-
-footer ul > li:last-child {
-  padding-right: 0;
-}
-
-footer,
-footer a,
-footer a:active,
-footer a:focus,
-footer a:hover {
   color: $white;
+  background-color: $footer-background-color;
+
+  .container {
+    padding: 50px 0;
+  }
+
+  ul {
+    text-align: center;
+    margin: 0;
+
+    > li {
+      display: inline;
+      padding-right: 10px;
+    }
+
+    > li:last-child {
+      padding-right: 0;
+    }
+  }
+
+  a,
+  a:active,
+  a:focus,
+  a:hover {
+    color: $white;
+  }
 }
