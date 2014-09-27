@@ -46,7 +46,7 @@
     @include transform(translateY(-50%));
 
     > img {
-      float: right;
+      float: none;
     }
   }
   
@@ -73,6 +73,16 @@
 }
 
 @media (min-width: $screen-lg) {
+  .container-logo {
+    position: relative;
+    top: 50%;
+    @include transform(translateY(-50%));
+
+    > img {
+      float: right;
+    }
+  }
+
   .container-description > p {
     padding-left: 20px;
   }
