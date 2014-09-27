@@ -56,6 +56,7 @@
 
   .container-description > p {
     margin-top: 0;
+    padding-left: 20px;
   }
 
   .nasa {
@@ -72,5 +73,7 @@
 }
 
 @media (min-width: $screen-lg) {
-  padding-left: 20px;
+  .container-description > p {
+    padding-left: 20px;
+  }
 }
