@@ -21,22 +21,38 @@
   @include transform(translate(-50%, -50%));
   margin: 0;
   padding: 0 25px;
-  width: 100%;
+  width: 300px;
   text-align: center;
   font-size: $font-size-scale-2;
   font-weight: 700;
   color: $white;
 }
 
+@media (min-width: $screen-xs) {
+  .intro-main-heading {
+    font-size: $font-size-scale-2;
+    width: 520px;
+  }
+}
+
+@media (min-width: $screen-sm) {
+  .intro-main-heading {
+    font-size: $font-size-scale-2;
+    width: 100%;
+  }
+}
+
 @media (min-width: $screen-md) {
   .intro-main-heading {
     font-size: $font-size-scale-3;
+    width: 100%;
   }
 }
 
 @media(min-width: $screen-lg) {
   .intro-main-heading {
     font-size: $font-size-scale-3;
+    width: 100%;
   }
 }
 
