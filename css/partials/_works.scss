@@ -32,7 +32,6 @@
   text-align: left;
   text-indent: 2em;
   margin-top: 25px;
-  padding-left: 20px;
 }
 
 .resume {
@@ -70,4 +69,8 @@
   .state-farm {
     height: 225px;
   }
+}
+
+@media (min-width: $screen-lg) {
+  padding-left: 20px;
 }
