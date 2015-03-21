@@ -121,6 +121,12 @@ input[type=checkbox] {
   }
 
   input[type=checkbox]:checked ~ [for="read-more"] {
+    top: 610px;
+  }
+}
+
+@media (min-width: $screen-md) {
+  input[type=checkbox]:checked ~ [for="read-more"] {
     top: 580px;
   }
 }
