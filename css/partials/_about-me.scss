@@ -117,15 +117,20 @@ input[type=checkbox] {
 @media (min-width: $screen-sm) {
   [for="read-more"],
   input[type=checkbox] {
-    top: 485px;
+    top: 515px;
   }
 
   input[type=checkbox]:checked ~ [for="read-more"] {
-    top: 610px;
+    top: 640px;
   }
 }
 
 @media (min-width: $screen-md) {
+  [for="read-more"],
+  input[type=checkbox] {
+    top: 485px;
+  }
+
   input[type=checkbox]:checked ~ [for="read-more"] {
     top: 580px;
   }
