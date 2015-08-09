@@ -1,0 +1,76 @@
+body {
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 36px;
+}
+
+.grid .pre-half,
+.grid .pre-w-1-2 {
+  margin-left: 50%;
+}
+
+.grid .pre-one-third,
+.grid .pre-w-1-3 {
+  margin-left: 33.3332%;
+}
+
+.grid .pre-two-thirds,
+.grid .pre-w-2-3 {
+  margin-left: 66.6665%;
+}
+
+.grid .pre-one-quarter,
+.grid .pre-one-fourth,
+.grid .pre-w-1-4 {
+  margin-left: 25%;
+}
+
+.grid .pre-three-quarters,
+.grid .pre-three-fourths,
+.grid .pre-w-3-4 {
+  margin-left: 75%;
+}
+
+.grid .pre-one-fifth,
+.grid .pre-w-1-5 {
+  margin-left: 20%;
+}
+
+.grid .pre-two-fifths,
+.grid .pre-w-2-5 {
+  margin-left: 40%;
+}
+
+.grid .pre-three-fifths,
+.grid .pre-w-3-5 {
+  margin-left: 60%;
+}
+
+.grid .pre-four-fifths,
+.grid .pre-w-4-5 {
+  margin-left: 80%;
+}
+
+@media screen and (max-width: 568px) {
+  .grid .pre-half,
+  .grid .pre-w-1-2,
+  .grid .pre-one-third,
+  .grid .pre-w-1-3,
+  .grid .pre-two-thirds,
+  .grid .pre-w-2-3,
+  .grid .pre-one-quarter,
+  .grid .pre-one-fourth,
+  .grid .pre-w-1-4,
+  .grid .pre-three-quarters,
+  .grid .pre-three-fourths,
+  .grid .pre-w-3-4,
+  .grid .pre-one-fifth,
+  .grid .pre-w-1-5,
+  .grid .pre-two-fifths,
+  .grid .pre-w-2-5,
+  .grid .pre-three-fifths,
+  .grid .pre-w-3-5,
+  .grid .pre-four-fifths,
+  .grid .pre-w-4-5 {
+    margin-left: 0;
+  }
+}

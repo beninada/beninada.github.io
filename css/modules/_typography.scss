@@ -1,8 +1,0 @@
-$font-family-sans-serif: "Helvetica Neue", helvetica, arial, sans-serif;
-$font-family-serif: Georgia, "Times New Roman", Times, serif;
-
-$font-size-base: 16px;
-$font-size-scale-1: ceil(modular-scale($font-size-base, 1, $augmented-fourth));
-$font-size-scale-2: ceil(modular-scale($font-size-base, 2, $augmented-fourth));
-$font-size-scale-3: ceil(modular-scale($font-size-base, 3, $augmented-fourth));
-$font-size-scale-4: ceil(modular-scale($font-size-base, 4, $augmented-fourth));
