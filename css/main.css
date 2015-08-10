@@ -1,6 +1,31 @@
-body {
+html {
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 36px;
+  font-size: 42px;
+  font-weight: 300;
+  color: #555;
+}
+
+body {
+  padding: 100px 0 100px 0;
+}
+
+a,
+a:active
+a:focus
+a:visited {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 2px solid #555;
+}
+
+a:hover {
+  color: rgba(5, 111, 119, 0.41);
+  border-bottom-color: rgba(5, 111, 119, 0.41);
+}
+
+section div:first-child {
+  font-weight: 700;
+  color: rgba(5, 111, 119, 0.41);
 }
 
 .grid .pre-half,
@@ -50,7 +75,27 @@ body {
   margin-left: 80%;
 }
 
+.grid .pre-one-tenth,
+.grid .pre-w-1-10 {
+  margin-left: 10%;
+}
+
 @media screen and (max-width: 568px) {
+  html {
+    font-size: 24px;
+  }
+
+  body {
+    padding: 70px 40px 70px 40px;
+  }
+
+  a,
+  a:active
+  a:focus
+  a:visited {
+    border-width: 1px;
+  }
+
   .grid .pre-half,
   .grid .pre-w-1-2,
   .grid .pre-one-third,
@@ -70,7 +115,15 @@ body {
   .grid .pre-three-fifths,
   .grid .pre-w-3-5,
   .grid .pre-four-fifths,
-  .grid .pre-w-4-5 {
-    margin-left: 0;
+  .grid .pre-w-4-5,
+  .grid .pre-one-tenth,
+  .grid .pre-w-1-10 {
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+  }
+
+  .grid .three-fifths {
+    width: 100%;
+    padding-right: inherit !important;
   }
 }
