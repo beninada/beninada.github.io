@@ -14,7 +14,6 @@
     "bower_components"
   ],
   "dependencies": {
-    "smooth-scroll": "https://github.com/cferdinandi/smooth-scroll.git",
-    "bourbon": "3.2.3"
+    "gridism": "~0.2.1"
   }
 }

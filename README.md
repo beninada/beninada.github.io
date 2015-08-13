@@ -8,7 +8,7 @@ Installation
 ```sh
 git clone [clone-url] beninada
 cd beninada
-npm i -d
+npm install
 bower install
 ```
 
@@ -23,11 +23,9 @@ grunt clean     # Remove minified files and dist/
 ```
 
 ```sh
-grunt build     # Assemble files for deployment to this project
+grunt build     # Assemble files for deployment
 ```
 
 Let's Chat
 --------
-Feel free to [email me](mailto:benjamin.inada@gmail.com), if you have any questions or just want to get in touch. I'm always available to talk about any projects that I can help you design & build.
-
-I'm also on [Behance](https://www.behance.net/beninada), [LinkedIn](https://www.linkedin.com/in/beninada), [Twitter](https://twitter.com/beninada), and [Tumblr](http://benthegreat.tumblr.com).
+Feel free to email me at [me@beninada.com](mailto:me@beninada.com), if you have any questions or just want to get in touch.

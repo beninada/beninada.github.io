@@ -5,7 +5,7 @@ module.exports = function(grunt) {
     concat: {
       dist: {
         src: ['js/**/*.js'],
-        dest: 'dist/js/compiled.js'
+        dest: 'js/concatenated.js'
       }
     },
     uglify: {
@@ -14,28 +14,14 @@ module.exports = function(grunt) {
       },
       dist: {
         files: {
-          'js/compiled.min.js': ['dist/js/compiled.js']
-        }
-      }
-    },
-    sass: {
-      dist: {
-        files: {
-          'dist/css/main.css': 'css/main.scss'
+          'js/minified.min.js': ['js/concatenated.js']
         }
       }
     },
     cssmin: {
-      minify: {
-        expand: true,
-        cwd: 'dist/css/',
-        src: ['*.css', '!*.min.css'],
-        dest: 'dist/css/',
-        ext: '.min.css'
-      },
-      combine: {
+      target: {
         files: {
-          'css/compiled.min.css': ['dist/css/**/*.min.css']
+          'css/minified.min.css': ['bower_components/gridism/gridism.css', 'css/main.css']
         }
       }
     },
@@ -51,7 +37,7 @@ module.exports = function(grunt) {
         }
       }
     },
-    clean: ['dist', 'css/*.min.css', 'js/*.min.js'],
+    clean: ['css/*.min.css', 'js/*.min.js'],
     connect: {
       server: {
         options: {
@@ -63,14 +49,13 @@ module.exports = function(grunt) {
     watch: {
       dev: {
         files: ['index.html', 'css/**/*', 'js/**/*', '!css/**/*.min.css', '!js/**/*.min.js'],
-        tasks: ['latch']
+        tasks: ['build', 'watch']
       }
     }
   });
 
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-concat');
-  grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-uglify');
@@ -79,10 +64,7 @@ module.exports = function(grunt) {
 
   grunt.registerTask('lint',    ['jshint']);
   grunt.registerTask('minify',  ['concat', 'cssmin', 'uglify']);
-  grunt.registerTask('compile', ['sass']);
-  grunt.registerTask('build', ['clean', 'lint', 'compile', 'minify']);
-  
+  grunt.registerTask('build', ['clean', 'lint', 'minify']);
   grunt.registerTask('default', ['build', 'connect', 'watch']);
-  grunt.registerTask('latch', ['build', 'watch']);
 
 };
